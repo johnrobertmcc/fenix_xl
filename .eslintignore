@@ -1,0 +1,4 @@
+.storybook/*
+storybook-static/*
+build-storybook.log
+migration-storybook.log

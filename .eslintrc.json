@@ -1,0 +1,87 @@
+{
+  "extends": ["eslint:recommended", "plugin:jsdoc/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "settings": {
+    "jsdoc": {}
+  },
+  "plugins": ["jsdoc"],
+  "rules": {
+    "func-style": 0,
+    "jsdoc/check-indentation": "warn",
+    "jsdoc/check-line-alignment": [
+      "warn",
+      "always",
+      {
+        "tags": ["param", "returns"]
+      }
+    ],
+    "jsdoc/check-values": [
+      "warn",
+      {
+        "allowedAuthors": ["johnrobertmcc", "FenixXL"],
+        "numericOnlyVariation": false
+      }
+    ],
+    "jsdoc/require-param": ["warn", { "checkDestructuredRoots": false }],
+    "jsdoc/require-param-description": ["warn"],
+    "jsdoc/check-param-names": [
+      "warn",
+      { "checkDestructured": false, "allowExtraTrailingParamDocs": false }
+    ],
+    "comma-dangle": 0,
+    "max-len": 0,
+    "one-var": 0,
+    "import/no-anonymous-default-export": 0,
+    "object-curly-spacing": 0,
+    "no-console": "warn",
+    "no-debugger": 0,
+    "no-mixed-operators": 0,
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "no-prototype-builtins": 0,
+    "class-methods-use-this": 0,
+    "padded-blocks": 0,
+    "no-return-assign": 0,
+    "no-unused-expressions": 0,
+    "camelcase": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "prefer-destructuring": ["off"],
+    "object-curly-newline": ["off"],
+    "operator-linebreak": 0,
+    "react/jsx-pascal-case": 0,
+    "import/no-named-as-default": 0,
+    "import/no-unresolved": 0, // Linting will not interpret aliases if this rule is turned on
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0, //Allow us to put event handlers on any HTML element
+    "jsx-a11y/no-noninteractive-tabindex": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/no-array-index-key": 0,
+    "react/forbid-prop-types": [2, { "forbid": ["any"] }],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-bind": 0,
+    "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
+    "react/sort-comp": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-access-state-in-setstate": 0,
+    "react/button-has-type": 0,
+    "react/default-props-match-prop-types": 0,
+    "react/require-default-props": 0,
+    "react/no-unused-state": 0,
+    "no-unused-vars": 0,
+    "no-restricted-globals": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "prefer-promise-reject-errors": 0,
+    "react/no-this-in-sfc": 0,
+    "react/jsx-wrap-multilines": [1, { "logical": "ignore" }],
+    "react/no-did-update-set-state": 0
+  }
+}

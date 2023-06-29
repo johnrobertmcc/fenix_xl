@@ -1,0 +1,47 @@
+.ratesPage {
+  padding-bottom: 40px;
+}
+.ratesSectionTop {
+  padding: 40px 15px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background-color: #19274310;
+  > h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+  }
+  > p {
+    font-size: 1.3rem;
+    max-width: 75%;
+    margin: auto;
+    padding-top: 15px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      padding: 0 15px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.specialRatesSection {
+  > figure > figcaption {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  > figure > ul > li {
+    list-style: square;
+  }
+
+  > p,
+  > i {
+    padding: 20px 15px;
+  }
+}
