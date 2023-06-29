@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fenix_xl/static/css/main.368d620e.css",
+    "main.js": "/fenix_xl/static/js/main.643deabd.js",
+    "index.html": "/fenix_xl/index.html",
+    "main.368d620e.css.map": "/fenix_xl/static/css/main.368d620e.css.map",
+    "main.643deabd.js.map": "/fenix_xl/static/js/main.643deabd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.368d620e.css",
+    "static/js/main.643deabd.js"
+  ]
+}
