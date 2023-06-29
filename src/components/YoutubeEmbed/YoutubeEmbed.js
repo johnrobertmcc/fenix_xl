@@ -11,7 +11,7 @@ import styles from "./YoutubeEmbed.module.css";
  * @param   {object}  props            The component destructured as props.
  * @param   {string}  props.embedId    The YouTube embed id of the video to display.
  * @param   {?string} props.className  Optional classname for further styling.
- * @return  {Element}                  The YoutubeEmbed component.
+ * @returns  {Element}                  The YoutubeEmbed component.
  */
 export default function YoutubeEmbed({ embedId, className }) {
   return (

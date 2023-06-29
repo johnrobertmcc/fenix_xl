@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
  * @param   {string}  props.title The copy to pass to the h1 heading.
  * @param   {string}  props.copy The copy to pass to the paragraph tag.
  * @param   {?string}  props.className Optional classname passed from parent.
- * @return  {Element}                 The TextSection component.
+ * @returns  {Element}                 The TextSection component.
  */
 export default function TextSection({ title, copy, className }) {
   return (

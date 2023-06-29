@@ -7,7 +7,7 @@ import styles from "./CTA.module.css";
  * @author  johnrobertmcc
  * @since   06/26/2023
  * @version 1.0.0
- * @return  {Element}                 The CTA component.
+ * @returns  {Element}                 The CTA component.
  */
 export default function CTA() {
   return (

@@ -11,7 +11,7 @@ import styles from "./Rates.module.css";
  * @version 1.0.0
  * @param   {object}  props           The component destructured as props.
  * @param   {?string} props.className The name of the className derived from Pages.
- * @return  {Element}                 The Rates component.
+ * @returns  {Element}                 The Rates component.
  */
 export default function Rates({ className }) {
   return (

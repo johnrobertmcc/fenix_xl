@@ -13,7 +13,7 @@ import styles from "./MobileMenu.module.css";
  * @version 1.0.0
  * @param   {object}   props          The component destructured as props.
  * @param   {Function} props          Function used to close the menu on location change.
- * @return  {Element}                 The MobileMenu component.
+ * @returns  {Element}                 The MobileMenu component.
  */
 export default function MobileMenu({ setMenuIsOpen }) {
   const { pathname } = useLocation();

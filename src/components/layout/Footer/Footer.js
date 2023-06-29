@@ -22,7 +22,7 @@ import styles from "./Footer.module.css";
  * @version 1.0.0
  * @param   {object}  props           The component destructured as props.
  * @param   {string}  props.component The name of the component.
- * @return  {Element}                 The Footer component.
+ * @returns  {Element}                 The Footer component.
  */
 export default function Footer({ component }) {
   return (

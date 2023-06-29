@@ -13,7 +13,7 @@ import styles from "./Article.module.css";
  * @param   {?string} props.className Optional classname passed from parent.
  * @param   {string}  props.link      The link of the article to reference.
  * @param   {string}  props.title     The title of the article to pass.
- * @return  {Element}                 The Article component.
+ * @returns  {Element}                 The Article component.
  */
 export default function Article({ className, link, title }) {
   const articleRef = useRef();

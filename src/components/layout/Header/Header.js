@@ -11,7 +11,7 @@ import styles from "./Header.module.css";
  * @version 1.0.0
  * @param {Function} props.toggle Function used to toggle mobile menu.
  * @param   {Boolean} props.isOpen   Used to define if the menu is open for aria dom.
- * @return  {Element}         The Header component.
+ * @returns  {Element}         The Header component.
  */
 export default function Header({ toggle, isOpen }) {
   const { pathname } = useLocation();

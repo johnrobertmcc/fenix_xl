@@ -11,7 +11,7 @@ import { PAGE_MAP } from "./Page.utils";
  * @version 1.0.0
  * @param   {object}  props           The component destructured as props.
  * @param   {string}  props.page The name of the component.
- * @return  {Element}                 The Page component.
+ * @returns  {Element}                 The Page component.
  */
 export default function Page({ page }) {
   return createElement(PAGE_MAP?.[page], { className: styles.page });

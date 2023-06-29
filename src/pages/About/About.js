@@ -14,7 +14,7 @@ import { ABOUT_US_SECTIONS, FENIX_HISTORY } from "./About.utils";
  * @version 1.0.0
  * @param   {object}  props           The component destructured as props.
  * @param   {?string} props.className Optional classname derived from Page.
- * @return  {Element}                 The About component.
+ * @returns  {Element}                 The About component.
  */
 export default function About({ className }) {
   return (

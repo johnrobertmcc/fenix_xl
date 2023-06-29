@@ -10,7 +10,7 @@ import { ABOUT_US_COPY } from "./AboutUsMini.utils";
  * @version 1.0.0
  * @param   {object}  props           The component destructured as props.
  * @param   {Array}   props.copy       The copy to pass into a checkered seection.
- * @return  {Element}                 The AboutUsMini component.
+ * @returns  {Element}                 The AboutUsMini component.
  */
 export default function AboutUsMini({ copy }) {
   if (!copy) {

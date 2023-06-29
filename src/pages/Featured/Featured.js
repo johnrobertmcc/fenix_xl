@@ -18,7 +18,7 @@ import {
  * @version 1.0.0
  * @param   {object}  props            The component destructured as props.
  * @param   {?string} props.className  Optional classname derived from Pages.
- * @return  {Element}                  The Featured component.
+ * @returns  {Element}                  The Featured component.
  */
 export default function Featured({ className }) {
   return (

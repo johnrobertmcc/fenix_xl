@@ -10,7 +10,7 @@ import { ICON_MAP, PHYSICAL_ADDRESS } from "./ContactUs.utils";
  * @author  johnrobertmcc
  * @since   06/27/2023
  * @version 1.0.0
- * @return  {Element}                 The ContactUs component.
+ * @returns  {Element}                 The ContactUs component.
  */
 export default function ContactUs() {
   return (
@@ -39,7 +39,7 @@ export default function ContactUs() {
  * @param {string} props.card.address The address per type of card (email vs phone).
  * @param {string} props.card.href The physical attributes to define where to point the attached anchor.
  * @param {?string} props.card.description Optional description of the card.
- * @return  {Element}     The ContactUsCard component.
+ * @returns  {Element}     The ContactUsCard component.
  */
 function ContactUsCard({ card }) {
   const cardRef = useRef();

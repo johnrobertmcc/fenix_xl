@@ -7,7 +7,7 @@ import { FLAT_RATE_PRICES_RIDGEWOOD } from "./RateTable.utils";
  * @author  johnrobertmcc
  * @since   06/27/2023
  * @version 1.0.0
- * @return  {Element}                 The RateTable component.
+ * @returns  {Element}                 The RateTable component.
  */
 export default function RateTable() {
   return (

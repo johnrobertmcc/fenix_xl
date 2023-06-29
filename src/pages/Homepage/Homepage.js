@@ -14,7 +14,7 @@ import styles from "./Homepage.module.css";
  * @version 1.0.0
  * @param   {object}  props           The component destructured as props.
  * @param   {?string}  props.className Global classname passed from Pages.
- * @return  {Element}                 The Homepage component.
+ * @returns  {Element}                 The Homepage component.
  */
 export default function Homepage({ className }) {
   return (
@@ -32,6 +32,6 @@ Homepage.propTypes = {
   className: PropTypes.string,
 };
 
-Homepage.propTypes = {
+Homepage.defultProps = {
   className: null,
 };
