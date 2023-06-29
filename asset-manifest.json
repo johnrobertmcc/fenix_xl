@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fenix_xl/static/css/main.368d620e.css",
-    "main.js": "/fenix_xl/static/js/main.643deabd.js",
+    "main.css": "/fenix_xl/static/css/main.f96b7247.css",
+    "main.js": "/fenix_xl/static/js/main.ef0db1c3.js",
     "index.html": "/fenix_xl/index.html",
-    "main.368d620e.css.map": "/fenix_xl/static/css/main.368d620e.css.map",
-    "main.643deabd.js.map": "/fenix_xl/static/js/main.643deabd.js.map"
+    "main.f96b7247.css.map": "/fenix_xl/static/css/main.f96b7247.css.map",
+    "main.ef0db1c3.js.map": "/fenix_xl/static/js/main.ef0db1c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.368d620e.css",
-    "static/js/main.643deabd.js"
+    "static/css/main.f96b7247.css",
+    "static/js/main.ef0db1c3.js"
   ]
 }
