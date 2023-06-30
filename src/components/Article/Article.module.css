@@ -7,8 +7,9 @@
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  &:hover > a {
-    text-decoration: underline;
+  &:hover {
+    border: 1px solid black;
+
   }
 }
 
@@ -17,7 +18,4 @@
   text-decoration: none;
   color: black;
 
-  &:hover {
-    text-decoration: underline;
-  }
 }

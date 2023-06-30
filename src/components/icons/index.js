@@ -322,7 +322,7 @@ export function Phone({ fill = "black" }) {
 export function Facebook({ className, fill = "black" }) {
   return (
     <a
-      href="https://www.facebook.com/fenixcarservices/"
+      href="https://www.facebook.com/richy.bastidas?mibextid=LQQJ4d"
       target="_blank"
       rel="noreferrer"
       className={className}

@@ -18,12 +18,12 @@
   font-size: 1.3rem;
   padding: 0 15px;
   font-size: 1.2rem;
-  margin: 5px auto;
+  margin: 0 auto;
   text-align: center;
+  line-height: 1.5rem;
 
   @media (min-width: 768px) {
-    /* text-align: left; */
-    padding: 20px 15px;
+    padding: 15px;
   }
 }
 
@@ -31,7 +31,6 @@
   font-style: italic;
   font-size: 1rem;
 }
-
 
 .listItem {
   list-style: square;
@@ -44,11 +43,12 @@
   font-weight: 600;
 
   @media (min-width: 768px) {
-      font-size: 1.5rem;
-    }
+    font-size: 1.5rem;
+  }
 }
 
-.divider, .disclaimer {
+.divider,
+.disclaimer {
   margin: 40px auto;
   width: 75%;
 }

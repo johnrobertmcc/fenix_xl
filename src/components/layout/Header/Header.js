@@ -3,17 +3,18 @@ import { FenixXL } from "components/icons";
 import { Link, useLocation } from "react-router-dom";
 import { MOBILE_MENU_ID, ROUTES } from "utils/index";
 import styles from "./Header.module.css";
+
 /**
  * The semantic header to contain nav elements.
  *
  * @author  johnrobertmcc
  * @since   06/26/2023
  * @version 1.0.0
- * @param {Function} props.toggle Function used to toggle mobile menu.
- * @param   {Boolean} props.isOpen   Used to define if the menu is open for aria dom.
- * @returns  {Element}         The Header component.
+ * @param   {Function} props.toggle   Function used to toggle mobile menu.
+ * @param   {Boolean}  props.isOpen   Used to define if the menu is open for aria dom.
+ * @returns {Element}                 The Header component.
  */
-export default function Header({ toggle, isOpen }) {
+export default function Header({ toggle, isOpen, changeRoute }) {
   const { pathname } = useLocation();
 
   return (
@@ -28,7 +29,9 @@ export default function Header({ toggle, isOpen }) {
                 [styles.current]: pathname === route?.path,
               })}
             >
-              <Link to={route?.path}>{route?.title}</Link>
+              <Link to={route?.path} onClick={changeRoute}>
+                {route?.title}
+              </Link>
             </li>
           ))}
         </ul>

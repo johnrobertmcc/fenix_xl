@@ -15,7 +15,7 @@ import styles from "./MobileMenu.module.css";
  * @param   {Function} props          Function used to close the menu on location change.
  * @returns  {Element}                 The MobileMenu component.
  */
-export default function MobileMenu({ setMenuIsOpen }) {
+export default function MobileMenu({ changeRoute }) {
   const { pathname } = useLocation();
   return (
     <aside className={styles.mobileMenu} id={MOBILE_MENU_ID}>
@@ -30,7 +30,7 @@ export default function MobileMenu({ setMenuIsOpen }) {
             >
               <Link
                 to={route?.path}
-                onClick={() => setMenuIsOpen(false)}
+                onClick={changeRoute}
                 className={styles.anchor}
               >
                 {route?.title}

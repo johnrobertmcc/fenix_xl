@@ -23,6 +23,14 @@ export default function App() {
     setMenuIsOpen((prev) => !prev);
   }
 
+  /**
+   * Function used to close the mobileMenu and scroll the page to the top on route change.
+   */
+  function changeRoute() {
+    setMenuIsOpen(false);
+    window.scrollTo(0, 0);
+  }
+
   useEffect(() => {
     /**
      * Function used to handle the closing of menu if the window size is above 768 px.
@@ -47,8 +55,8 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <Header toggle={toggle} isOpen={menuIsOpen} />
-      {menuIsOpen && <MobileMenu setMenuIsOpen={setMenuIsOpen} />}
+      <Header toggle={toggle} isOpen={menuIsOpen} changeRoute={changeRoute} />
+      {menuIsOpen && <MobileMenu changeRoute={changeRoute} />}
       <Routes>
         {ROUTES?.map((route, i) => (
           <Route
@@ -58,7 +66,7 @@ export default function App() {
           />
         ))}
       </Routes>
-      <Footer />
+      <Footer changeRoute={changeRoute} />
     </BrowserRouter>
   );
 }

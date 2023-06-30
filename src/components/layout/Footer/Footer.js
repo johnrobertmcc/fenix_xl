@@ -20,11 +20,11 @@ import styles from "./Footer.module.css";
  * @author  johnrobertmcc
  * @since   06/26/2023
  * @version 1.0.0
- * @param   {object}  props           The component destructured as props.
- * @param   {string}  props.component The name of the component.
- * @returns  {Element}                 The Footer component.
+ * @param   {object}   props             The component destructured as props.
+ * @param   {Function} props.changeRoute Function used to reset window position and close mobile menu if applicable.
+ * @returns {Element}                     The Footer component.
  */
-export default function Footer({ component }) {
+export default function Footer({ changeRoute }) {
   return (
     <footer className={styles.footer}>
       <figure>
@@ -73,7 +73,11 @@ export default function Footer({ component }) {
         <ul className={styles.moreInfoList}>
           {ROUTES?.map((route, i) => (
             <li key={i} className={cn(styles.navItem)}>
-              <Link to={route?.path} className={styles.anchor}>
+              <Link
+                onClick={changeRoute}
+                to={route?.path}
+                className={styles.anchor}
+              >
                 {route?.title}
               </Link>
             </li>
@@ -104,8 +108,8 @@ export default function Footer({ component }) {
   );
 }
 Footer.propTypes = {
-  component: PropTypes.string,
+  changeRoute: PropTypes.func,
 };
 Footer.defaultProps = {
-  component: "Footer",
+  changeRoute: () => {},
 };
