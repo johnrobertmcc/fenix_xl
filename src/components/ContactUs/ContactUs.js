@@ -16,7 +16,9 @@ export default function ContactUs() {
   return (
     <section className={styles.contactUs}>
       <figure className={styles.contactUsCardWrapper}>
-        <figcaption>{PHYSICAL_ADDRESS}</figcaption>
+        <figcaption className={styles.figCaption}>
+          {PHYSICAL_ADDRESS}
+        </figcaption>
         <ul className={styles.contactUsList}>
           {CONTACT_METHODS?.map((card, i) => (
             <ContactUsCard card={card} key={i} />
@@ -50,7 +52,12 @@ function ContactUsCard({ card }) {
       tabIndex={0}
     >
       {ICON_MAP?.[card?.type]}
-      <a ref={cardRef} href={card?.href} tabIndex={-1}>
+      <a
+        ref={cardRef}
+        href={card?.href}
+        tabIndex={-1}
+        className={styles.anchor}
+      >
         {card?.address}
       </a>
       {card?.description && <p>{card.description}</p>}

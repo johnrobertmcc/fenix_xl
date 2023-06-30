@@ -1,6 +1,6 @@
 export const FEAUTURED_IN_HEADING = {
-  title: "Featured In",
-  copy: "Fenix XL Car and Limo Corp has been featured in numerous news articles and documentaries throughout the years, below is a small list of where more information can be found.",
+  title: "Fenix Community",
+  copy: "Established in response to the COVID-19 pandemic, Fenix XL Car & Limo founded the Fenix Community Fridge to help those in need. Starting as just a food drive, it grew into a book & clothing donation spot and even a seasonal (Easter, Halloween, and Christmas) gifting area. Our location has received a lot of traction from the news and even appeared in a short film, “Give and Take,” and is always looking for more help.",
 };
 
 export const ARTICLE_CARDS = [

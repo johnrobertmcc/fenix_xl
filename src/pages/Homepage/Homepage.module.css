@@ -1,12 +1,12 @@
 .sideBySide {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   height: 100%;
   align-items: center;
   padding: 25px 0;
+  display: block;
+  gap: 25px;
 
-  @media (max-width: 768px) {
-    display: block;
-    gap: 25px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

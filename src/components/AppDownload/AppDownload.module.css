@@ -1,0 +1,19 @@
+.appDownloadSection {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadHeading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.downloadCopy {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  max-width: 95%;
+  text-align: center;
+}

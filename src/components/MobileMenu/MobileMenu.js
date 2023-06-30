@@ -28,7 +28,11 @@ export default function MobileMenu({ setMenuIsOpen }) {
                 [styles.current]: pathname === route?.path,
               })}
             >
-              <Link to={route?.path} onClick={() => setMenuIsOpen(false)}>
+              <Link
+                to={route?.path}
+                onClick={() => setMenuIsOpen(false)}
+                className={styles.anchor}
+              >
                 {route?.title}
               </Link>
             </li>

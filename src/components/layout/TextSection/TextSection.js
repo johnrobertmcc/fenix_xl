@@ -1,5 +1,6 @@
 import cn from "classnames";
 import PropTypes from "prop-types";
+import styles from './TextSection.module.css'
 
 /**
  * A reusable section that is given a supplied title and copy as text.
@@ -16,8 +17,8 @@ import PropTypes from "prop-types";
 export default function TextSection({ title, copy, className }) {
   return (
     <section className={cn(className && className)}>
-      <h1>{title}</h1>
-      <p>{copy}</p>
+      <h1 className={styles.heading}>{title}</h1>
+      <p className={styles.copy}>{copy}</p>
     </section>
   );
 }

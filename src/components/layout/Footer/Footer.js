@@ -28,53 +28,70 @@ export default function Footer({ component }) {
   return (
     <footer className={styles.footer}>
       <figure>
-        <figcaption>Contact Us</figcaption>
+        <figcaption className={styles.figCaption}>Contact Us</figcaption>
         <ul className={styles.navList}>
           <li className={styles.contactListItem}>
             586 Seneca Ave, Queens, NY 11385
           </li>
           <li className={styles.contactListItem}>
-            <Phone />
-            <a href={CONTACT_METHODS[0].href} target="_blank" rel="noreferrer">
+            <Phone fill="white" />
+            <a
+              href={CONTACT_METHODS[0].href}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.anchor}
+            >
               {CONTACT_METHODS[0].address}
             </a>
           </li>
           <li className={styles.contactListItem}>
-            <Email />
-            <a href={CONTACT_METHODS[1].href} target="_blank" rel="noreferrer">
+            <Email fill="white" />
+            <a
+              href={CONTACT_METHODS[1].href}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.anchor}
+            >
               {CONTACT_METHODS[1].address}
             </a>
           </li>
           <li className={styles.contactListItem}>
-            <WhatsApp />
-            <a href={CONTACT_METHODS[2].href} target="_blank" rel="noreferrer">
+            <WhatsApp fill="white" />
+            <a
+              href={CONTACT_METHODS[2].href}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.anchor}
+            >
               {CONTACT_METHODS[2].address}
             </a>
           </li>
         </ul>
       </figure>
       <figure>
-        <figcaption>More Information</figcaption>
+        <figcaption className={styles.figCaption}>More Information</figcaption>
         <ul className={styles.moreInfoList}>
           {ROUTES?.map((route, i) => (
             <li key={i} className={cn(styles.navItem)}>
-              <Link to={route?.path}>{route?.title}</Link>
+              <Link to={route?.path} className={styles.anchor}>
+                {route?.title}
+              </Link>
             </li>
           ))}
         </ul>
       </figure>
       <figure>
-        <figcaption>Find Us</figcaption>
+        <figcaption className={styles.figCaption}>Find Us</figcaption>
         <ul className={styles.findUsList}>
-          <li>
+          <li className={cn(styles.navItem)}>
             <AppStore className={styles.appStore} />
           </li>
-          <li>
+          <li className={cn(styles.navItem)}>
             <GooglePlay className={styles.playStore} />
           </li>
           <li className={styles.socialWrapper}>
-            <Facebook className={styles.facebook} />
-            <Instagram className={styles.instagram} />
+            <Facebook className={styles.facebook} fill="white" />
+            <Instagram className={styles.instagram} fill="white" />
           </li>
         </ul>
       </figure>

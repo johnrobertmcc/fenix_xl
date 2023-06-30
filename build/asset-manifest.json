@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fenix_xl/static/css/main.f96b7247.css",
-    "main.js": "/fenix_xl/static/js/main.ef0db1c3.js",
-    "index.html": "/fenix_xl/index.html",
-    "main.f96b7247.css.map": "/fenix_xl/static/css/main.f96b7247.css.map",
-    "main.ef0db1c3.js.map": "/fenix_xl/static/js/main.ef0db1c3.js.map"
+    "main.css": "/static/css/main.12d61511.css",
+    "main.js": "/static/js/main.ef0db1c3.js",
+    "index.html": "/index.html",
+    "main.12d61511.css.map": "/static/css/main.12d61511.css.map",
+    "main.ef0db1c3.js.map": "/static/js/main.ef0db1c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f96b7247.css",
+    "static/css/main.12d61511.css",
     "static/js/main.ef0db1c3.js"
   ]
 }

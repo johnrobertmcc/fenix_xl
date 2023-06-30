@@ -1,49 +1,61 @@
 .footer {
   background-color: #192743;
   min-height: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: block;
   color: white;
   padding-top: 25px;
 
-  @media (max-width: 768px) {
-    display: block;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   > figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
-    @media (max-width: 768px) {
-      align-items: flex-start;
-    }
-    > figcaption {
-      border-bottom: 1px solid white;
-      font-size: 24px;
-      font-weight: 600;
-      text-align: center;
-      text-transform: uppercase;
+    @media (min-width: 768px) {
+      align-items: center;
     }
   }
+}
+
+.figCaption {
+  border-bottom: 1px solid white;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .navList {
   padding: 0;
 }
 
-.contactListItem {
+.contactListItem,
+.navItem {
   display: flex;
   padding: 15px 0;
+  list-style: none;
 
   > svg {
     fill: white;
     height: 15px;
     margin-right: 10px;
   }
+}
 
-  > a {
-    color: white;
+.anchor {
+  color: white;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -53,34 +65,17 @@
   > li {
     list-style: none;
     padding: 10px 0;
-
-    > a {
-      color: white;
-      height: 100%;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
 
 .findUsList {
   z-index: 99;
   padding: 0;
-
-  > li {
-    list-style: none;
-  }
-
-  > a {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .playStore {
+  height: 100%;
+  width: 117px;
   > img {
     height: 100%;
     width: 117px;
@@ -89,28 +84,6 @@
 
 .appStore {
   height: 100%;
-}
-
-.socialWrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.instagram {
-  fill: white;
-  > svg {
-    height: 35px;
-    width: 25px;
-  }
-}
-.facebook {
-  margin-right: 25px;
-  > svg {
-    fill: #ffffff;
-    height: 35px;
-    width: 25px;
-  }
 }
 
 .legal {
@@ -125,16 +98,23 @@
     padding: 15px;
     font-size: 12px;
   }
+}
 
-  .imgWrapper {
+.imgWrapper {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+
+  & > svg {
+    display: flex;
+    height: 65px;
     width: 65px;
-    height: 100%;
-    overflow: hidden;
-
-    & > svg {
-      display: flex;
-      height: 65px;
-      width: 65px;
-    }
   }
+}
+
+.socialWrapper {
+  list-style: none;
+}
+.facebook {
+  margin-right: 40px;
 }

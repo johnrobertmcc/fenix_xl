@@ -1,6 +1,8 @@
 import cn from "classnames";
 import Article from "components/Article";
+import ContactUs from "components/ContactUs/ContactUs";
 import YoutubeEmbed from "components/YoutubeEmbed";
+import { HeritageRadioNetwork, Spectrum } from "components/icons";
 import TextSection from "components/layout/TextSection";
 import PropTypes from "prop-types";
 import styles from "./Featured.module.css";
@@ -25,6 +27,39 @@ export default function Featured({ className }) {
     <article className={cn(styles.featuredPage, className && className)}>
       <TextSection {...FEAUTURED_IN_HEADING} className={styles.featured} />
 
+      <section className={styles.giveAndTake}>
+        <iframe
+          src="https://player.vimeo.com/video/581611513?h=93e083b4c8"
+          width="1920"
+          height="1080"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          style={{ height: "100%", width: "100%" }}
+          class="scroll-transition-fade"
+          data-scale="59"
+        />
+      </section>
+      <section className={styles.asFeaturedIn}>
+        <figure className={styles.featuredInFigure}>
+          <figcaption className={styles.figCaption}>
+            As Featured In...
+          </figcaption>
+          <div className={styles.featuredInGrid}>
+            <Spectrum className={cn(styles.spectrum, styles.asset)} />
+            <img
+              src="assets/BKReader.png"
+              alt=""
+              className={cn(styles.bkReader, styles.asset)}
+            />
+            <img
+              src="assets/gooddocs.png"
+              alt=""
+              className={cn(styles.gooddocs, styles.asset)}
+            />
+            <HeritageRadioNetwork className={cn(styles.HRN, styles.asset)} />
+          </div>
+        </figure>
+      </section>
       <section className={cn(styles.featuredSection)}>
         <figure className={cn(styles.featuredFigure, styles.articles)}>
           <figcaption>Articles</figcaption>
@@ -38,14 +73,23 @@ export default function Featured({ className }) {
 
       <section className={cn(styles.featuredSection, styles.videoSection)}>
         <figure className={cn(styles.featuredFigure, styles.videos)}>
-          <figcaption>Videos</figcaption>
+          <figcaption>More Videos</figcaption>
           <ul className={styles.videoList}>
             {VIDEO_EMBEDS?.map((video, i) => (
-              <li key={i}>
+              <li key={i} className={styles.videoListItem}>
                 <YoutubeEmbed embedId={video} />
               </li>
             ))}
           </ul>
+        </figure>
+      </section>
+
+      <section className={styles.volunteer}>
+        <figure>
+          <figcaption className={styles.figCaption}>
+            Join the Fenix Community -- Donate or Volunteer today!
+          </figcaption>
+          <ContactUs />
         </figure>
       </section>
     </article>

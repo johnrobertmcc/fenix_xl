@@ -6,42 +6,53 @@
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   background-color: #19274310;
-  > h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-  }
-  > p {
-    font-size: 1.3rem;
-    max-width: 75%;
-    margin: auto;
-    padding-top: 15px;
+}
 
-    @media (max-width: 768px) {
-      max-width: 100%;
-      padding: 0 15px;
-      font-size: 1.2rem;
-    }
+.heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.copy {
+  font-size: 1.3rem;
+  padding: 0 15px;
+  font-size: 1.2rem;
+  margin: 5px auto;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    /* text-align: left; */
+    padding: 20px 15px;
   }
 }
 
-.specialRatesSection {
-  > figure > figcaption {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 500;
+.sub {
+  font-style: italic;
+  font-size: 1rem;
+}
 
-    @media (max-width: 768px) {
-      font-size: 1.2rem;
+
+.listItem {
+  list-style: square;
+  padding: 5px 0;
+}
+
+.figCaption {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+      font-size: 1.5rem;
     }
-  }
+}
 
-  > figure > ul > li {
-    list-style: square;
-  }
+.divider, .disclaimer {
+  margin: 40px auto;
+  width: 75%;
+}
 
-  > p,
-  > i {
-    padding: 20px 15px;
-  }
+.highlighted {
+  font-weight: 600;
 }

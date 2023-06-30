@@ -3,7 +3,7 @@ import { ABOUT_US_COPY } from "components/AboutUsMini/AboutUsMini.utils";
 export const ABOUT_US_SECTIONS = [
   {
     title: "Additional Information",
-    copy: "We now accept medicaid! Get free medical transportation call m.A.S. At (800) 861-7040 to request Fenix XL Car & Limo as your prefered provider for medical transportation. You'll be asked for the following upon calling: name address medicaid number we now provide accessible vehicles for wheelchairs. With our wheelchair accessible vehicles (wav), you can now ride with ease. You will remain seated the whole time, no need to be transferred from your wheelchair to the car seat. Our courteous drivers await to transport you. Call us at (718) 821-2121 prior to your appointment.",
+    copy: "We now accept medicaid! Get free medical transportation call M.A.S. at (800) 861-7040 to request Fenix XL Car & Limo as your prefered provider for medical transportation. You will be asked for the following upon calling: name address medicaid number we now provide accessible vehicles for wheelchairs. With our wheelchair accessible vehicles (wav), you can now ride with ease. You will remain seated the whole time, no need to be transferred from your wheelchair to the car seat. Our courteous drivers await to transport you. Call us at (718) 821-2121 prior to your appointment.",
   },
   ...ABOUT_US_COPY,
   { title: "Specialties", copy: "Safe and fair prices to any destination." },

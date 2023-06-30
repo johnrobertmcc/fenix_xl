@@ -1,0 +1,42 @@
+.reviewsSection {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #192743;
+  margin: 25px 0 0;
+}
+
+.reviewBox {
+  padding: 25px 15px;
+  margin: 25px;
+  min-height: 125px;
+  color: white;
+  width: 75%;
+
+  &:hover {
+    border-radius: 16px;
+    box-shadow: 0px 0 12px 8px rgba(255, 255, 255, 0.4);
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.reviewCTA,
+.reviewCopy {
+  text-align: center;
+}
+
+.reviewCTA {
+  text-transform: uppercase;
+}
+
+.reviewCopy {
+  line-height: 2rem;
+  font-size: 1.3rem;
+}

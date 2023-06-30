@@ -1,8 +1,10 @@
 import cn from "classnames";
 import AboutUsMini from "components/AboutUsMini";
+import AppDownload from "components/AppDownload/AppDownload";
 import CTA from "components/CTA";
 import ContactUs from "components/ContactUs/ContactUs";
 import RateTable from "components/RateTable";
+import Review from "components/Review/Review";
 import PropTypes from "prop-types";
 import styles from "./Homepage.module.css";
 
@@ -24,6 +26,8 @@ export default function Homepage({ className }) {
         <RateTable />
         <ContactUs />
       </section>
+      <Review />
+      <AppDownload />
       <AboutUsMini />
     </article>
   );

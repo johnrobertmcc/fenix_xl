@@ -22,7 +22,13 @@ export default function Article({ className, link, title }) {
       className={cn(styles.articleCard, className && className)}
       onClick={() => articleRef.current.click()}
     >
-      <a ref={articleRef} target="_blank" rel="noreferrer" href={link}>
+      <a
+        ref={articleRef}
+        target="_blank"
+        rel="noreferrer"
+        href={link}
+        className={styles.anchor}
+      >
         {title}
       </a>
     </li>

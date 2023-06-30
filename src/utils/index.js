@@ -2,7 +2,7 @@ export const ROUTES = [
   { title: "Home", path: "/", key: "home_page" },
   { title: "About", path: "/about", key: "about" },
   { title: "Rates", path: "/rates", key: "rates" },
-  { title: "Featured", path: "/featured", key: "featured" },
+  { title: "Fenix Community", path: "/featured", key: "featured" },
 ];
 
 export const MOBILE_MENU_ID = "mobileToggle";

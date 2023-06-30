@@ -3,30 +3,63 @@
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   background-color: #19274310;
-  min-height: 50vh;
+  text-align: center;
 
-  > h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-  }
   > p {
     font-size: 1.3rem;
-    max-width: 75%;
-    margin: auto;
-    line-height: 2.5rem;
-
-    @media (max-width: 768px) {
-      max-width: 100%;
-      padding: 0 15px;
-      font-size: 1.2rem;
+    max-width: 100%;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    @media (min-width: 768px) {
+      max-width: 75%;
+      margin: auto;
+      line-height: 2.5rem;
     }
   }
 }
 
+.giveAndTake {
+  position: relative;
+  height: 500px;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+
 .featuredSection {
   padding: 40px 0;
 }
+
+.asFeaturedIn {
+    background-color: #192743;
+    color: white;
+    padding: 25px 0;
+    font-weight: 700;
+}
+
+.featuredInGrid {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+  }
+
+.asset {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  height: 40px;
+}
+
 
 .videoSection {
   border-top-left-radius: 24px;
@@ -42,17 +75,35 @@
   text-align: center;
 }
 
-.articleList,
-.videoList li {
+.videoList, .articleList{
+  padding: 0;
+}
+
+.videoListItem{
   list-style: none;
 }
 
 .articleList {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 25px;
 
-  @media (max-width: 768px) {
-    grid-template-columns: unset;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
   }
+}
+
+.volunteer {
+  margin: 40px 0;
+}
+
+.figCaption{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0;
+
+  @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
 }

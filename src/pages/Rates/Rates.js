@@ -17,29 +17,37 @@ export default function Rates({ className }) {
   return (
     <article className={cn(styles.ratesPage, className && className)}>
       <section className={styles.ratesSectionTop}>
-        <h1>Rates</h1>
-        <p>
+        <h1 className={styles.heading}>Rates</h1>
+        <p className={styles.copy}>
           Driver price list approved by New York City Taxi and limousine
           Commision.
         </p>
-        <p>
+        <p className={styles.copy}>
           Fenix XL Car & Limo Service Corp. is like a facility agency that
           provides car service transportation through the phone and mobile App
           software.
         </p>
-        <p>
+        <p className={styles.copy}>
           Driver and car provide their own insurance, law, city rules, state,
           TLC.
         </p>
       </section>
       <section className={styles.specialRatesSection}>
-        <figure>
-          <figcaption> Special prices</figcaption>
-          <ul>
-            <li>Regular car local call: $8</li>
-            <li>Deliveries: $5 additional to the regular price.</li>
-            <li>Extra package delivery (driver options).</li>
-            <li>
+        <figure className={styles.figure}>
+          <figcaption className={styles.figCaption}>Special prices</figcaption>
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              Regular car local call:
+              <span className={styles.highlighted}> $8</span>.
+            </li>
+            <li className={styles.listItem}>
+              Deliveries: <span className={styles.highlighted}>$5</span>{" "}
+              additional to the regular price.
+            </li>
+            <li className={styles.listItem}>
+              Extra package delivery (driver options).
+            </li>
+            <li className={styles.listItem}>
               Waiting time: the first 10 minutes of waiting time without charge.
               After 10 minutes, $5 additional rate per each 10 additional
               minutes.
@@ -47,36 +55,60 @@ export default function Rates({ className }) {
           </ul>
         </figure>
         <figure>
-          <figcaption>Rent Price Per Hour</figcaption>
-          <ul>
-            <li>Inside the area: $40 minivan, $50 SUV</li>
-            <li>Outside the area: $55 minivan suv $65</li>
-            <li>minivan local call: $12 extra</li>
-            <li>
-              charge for minivans 50% Additional, cargo agreement between the
+          <figcaption className={styles.figCaption}>
+            Rent Price Per Hour
+          </figcaption>
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              Inside the area: <span className={styles.highlighted}>$40</span>{" "}
+              minivan, <span className={styles.highlighted}>$50</span> SUV.
+            </li>
+            <li className={styles.listItem}>
+              Outside the area: <span className={styles.highlighted}>$55</span>{" "}
+              minivan, <span className={styles.highlighted}>$65</span> SUV.
+            </li>
+            <li className={styles.listItem}>
+              Minivan local call:<span className={styles.highlighted}>$12</span>{" "}
+              extra.
+            </li>
+            <li className={styles.listItem}>
+              Charge for minivans 50% additional, cargo agreement between the
               driver and the customer.
             </li>
           </ul>
         </figure>
         <figure>
-          <figcaption>Airport Fees</figcaption>
-          <ul>
-            <li>Newark: $100 con toll minivan suv $150 con toll</li>
-            <li>J.F.K.: $35 minivan suv $48-$53</li>
-            <li>
-              La Guardia: $30 minivan suv $45 (extra stops within the same route
-              $3.00)
+          <figcaption className={styles.figCaption}>Airport Fees</figcaption>
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              Newark: <span className={styles.highlighted}>$100</span> minivan
+              toll included, <span className={styles.highlighted}>$150</span>{" "}
+              SUV toll included.
+            </li>
+            <li className={styles.listItem}>
+              J.F.K.: <span className={styles.highlighted}>$35</span> minivan,{" "}
+              <span className={styles.highlighted}>$48-$53</span> SUV.
+            </li>
+            <li className={styles.listItem}>
+              La Guardia: <span className={styles.highlighted}>$30</span>{" "}
+              minivan, <span className={styles.highlighted}>$45</span> SUV
+              (extra stops within the same route
+              <span className={styles.highlighted}> $3.00</span>).
             </li>
           </ul>
         </figure>
-        <p>
+        <hr className={styles.divider} />
+        <p className={cn(styles.copy, styles.disclaimer)}>
           We deal between customer and driver price list*. Extra stops
           out-of-route, deliveries, package luggage, waiting time, tolls,
           pick-ups, parking fees, and special services (such as use of driver’s
           cell phone, etc.) are prices in addition to the regular price in
           agreement between customer and the driver.
         </p>
-        <i>*price list is in TLC records.</i>
+        <p className={cn(styles.copy, styles.sub)}>
+          *price list is in TLC records.
+        </p>
+        <hr className={styles.divider} />
         <ContactUs />
       </section>
     </article>

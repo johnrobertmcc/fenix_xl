@@ -1,5 +1,5 @@
 .CTA {
-  min-height: 85vh;
+  min-height: calc(85vh - 85px);
   position: relative;
   background-color: #19274310;
   padding: 0 !important;
@@ -13,40 +13,42 @@
 }
 
 .copyWrapper {
-  padding: 15px 35px;
-  grid-column: 1 / span 3;
 
-  @media (max-width: 768px) {
-    padding: 0;
-    text-align: center;
-    grid-column: 1 / span 5;
+  padding: 0;
+  grid-column: 1 / span 5;
+  text-align: center;
+  @media (min-width: 768px) {
+    padding: 15px 35px;
+    grid-column: 1 / span 3;
+    text-align: left;
   }
 }
 
 .title {
-  font-size: 5rem;
   z-index: 99;
   text-transform: uppercase;
 
-  @media (max-width: 768px) {
-    font-size: 3rem;
+  font-size: 3rem;
+  @media (min-width: 768px) {
+    font-size: 5rem;
   }
 }
 
 .copy {
   line-height: 2.2rem;
-  font-size: 1.4rem;
-  max-width: 60%;
+  max-width: 90%;
+  font-size: 1.2rem;
+  margin: auto;
 
   & > span {
     font-weight: 700;
     text-decoration: underline;
   }
 
-  @media (max-width: 768px) {
-    max-width: 90%;
-    margin: auto;
-    font-size: 1.2rem;
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+    max-width: 60%;
+    margin: 0;
   }
 }
 
@@ -55,16 +57,18 @@
   display: flex;
   margin-top: 25px;
   align-items: center;
-
-  @media (max-width: 768px) {
-    justify-content: center;
+  justify-content: center;
+  @media (min-width: 768px) {
+    justify-content: flex-start;
   }
 }
 
 .playStore {
+  width: 117px;
   > img {
     height: 100%;
-    width: 117px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -74,7 +78,6 @@
 }
 
 .imageWrapper {
-  grid-column: 4 / span 2;
   height: 100%;
   position: relative;
   background-position: center;
@@ -82,12 +85,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  grid-row: 1;
+  min-height: 500px;
+  grid-column: span 5;
 
-  @media (max-width: 768px) {
-    min-height: 500px;
-    grid-column: span 5;
-    grid-row: 1;
+  @media (min-width: 768px) {
+    grid-column: 4 / span 2;
+    min-height: 400px;
   }
 }
 
@@ -95,8 +99,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(270deg, #19274310 20%, #f1f1f3 96%);
-  @media (max-width: 768px) {
-    background: linear-gradient(180deg, #19274310 50%, #f1f1f3 86%);
+  background: linear-gradient(180deg, #19274310 50%, #f1f1f3 86%);
+  @media (min-width: 768px) {
+    background: linear-gradient(270deg, #19274310 20%, #f1f1f3 96%);
   }
 }
