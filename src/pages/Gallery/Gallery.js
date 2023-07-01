@@ -4,12 +4,7 @@ import TextSection from "components/layout/TextSection/TextSection";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import styles from "./Gallery.module.css";
-import {
-  GALLERY_HEADING,
-  GALLERY_MAX_RANGE,
-  MAX_PICS,
-  PAGINATION,
-} from "./Gallery.utils";
+import { GALLERY_HEADING, MAX_PICS, PAGINATION } from "./Gallery.utils";
 
 /**
  * A gallery used to serve images of Fenix XL.
@@ -37,7 +32,7 @@ export default function Gallery({ className }) {
     <section className={cn(styles.galleryPage, className && className)}>
       <TextSection {...GALLERY_HEADING} className={styles.galleryHeading} />
       <ul className={styles.galleryList}>
-        {Array.from({ length: GALLERY_MAX_RANGE }).map((_, i) => {
+        {Array.from({ length: PAGINATION }).map((_, i) => {
           const base = i + offSet;
           if (base >= MAX_PICS) {
             return null;

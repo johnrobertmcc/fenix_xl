@@ -15,5 +15,9 @@ export const CONTACT_METHODS = [
     address: "fenixxlcorp@gmail.com",
     href: "mailto:fenixxlcorp@gmail.com",
   },
-  { type: "text", address: "(+1) 347.461.8372", href: "sms:13474618372" },
+  {
+    type: "text",
+    address: "(+1) 347.461.8372",
+    href: "https://api.whatsapp.com/send?phone=13474618372",
+  },
 ];

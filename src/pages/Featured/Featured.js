@@ -35,7 +35,6 @@ export default function Featured({ className }) {
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           style={{ height: "100%", width: "100%" }}
-          class="scroll-transition-fade"
           data-scale="59"
         />
       </section>
