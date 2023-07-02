@@ -5,4 +5,4 @@ export const GALLERY_HEADING = {
 
 export const PAGINATION = 12;
 
-export const MAX_PICS = 64;
+export const MAX_PICS = 12;

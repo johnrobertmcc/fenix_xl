@@ -38,32 +38,33 @@ export default function Gallery({ className }) {
             return null;
           }
           return (
-            <li key={i} className={styles.imageWrapper}>
-              <GalleryImage
-                src={`assets/gallery/gallery_image_${base + 1}.webp`}
-              />
-            </li>
+            <GalleryImage
+              src={`assets/gallery/gallery_image_${base + 1}.webp`}
+              key={i}
+            />
           );
         })}
       </ul>
-      <div className={styles.buttonWrapper}>
-        <button
-          className={cn(styles.button, styles.previous)}
-          disabled={offSet === 0}
-          aria-label="Previous Page"
-          onClick={handlePrev}
-        >
-          Prev
-        </button>
-        <button
-          className={cn(styles.button, styles.next)}
-          disabled={offSet + PAGINATION > MAX_PICS}
-          aria-label="Next Page"
-          onClick={handleNext}
-        >
-          Next
-        </button>
-      </div>
+      {MAX_PICS > 12 && (
+        <div className={styles.buttonWrapper}>
+          <button
+            className={cn(styles.button, styles.previous)}
+            disabled={offSet === 0}
+            aria-label="Previous Page"
+            onClick={handlePrev}
+          >
+            Prev
+          </button>
+          <button
+            className={cn(styles.button, styles.next)}
+            disabled={offSet + PAGINATION > MAX_PICS}
+            aria-label="Next Page"
+            onClick={handleNext}
+          >
+            Next
+          </button>
+        </div>
+      )}
       <ContactUs />
     </section>
   );
@@ -90,7 +91,7 @@ function GalleryImage({ src }) {
   }, [src]);
 
   return (
-    <>
+    <li className={styles.imageWrapper}>
       <img
         src={imgSrc}
         alt=""
@@ -102,7 +103,8 @@ function GalleryImage({ src }) {
         onError={(e) => console.error(e)}
       />
       <Loader className={cn({ [styles.loadComplete]: isLoaded })} />
-    </>
+      <span className={styles.mask}></span>
+    </li>
   );
 }
 
