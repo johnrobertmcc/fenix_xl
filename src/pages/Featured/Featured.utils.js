@@ -23,3 +23,5 @@ export const ARTICLE_CARDS = [
 ];
 
 export const VIDEO_EMBEDS = ["ZNXMEcPFfu0"];
+
+export const VOLUNTEER_FORM = "https://forms.gle/iASZxmmWaS1SSFYL9";

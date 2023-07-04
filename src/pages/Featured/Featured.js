@@ -10,6 +10,7 @@ import {
   ARTICLE_CARDS,
   FEAUTURED_IN_HEADING,
   VIDEO_EMBEDS,
+  VOLUNTEER_FORM,
 } from "./Featured.utils";
 
 /**
@@ -86,7 +87,14 @@ export default function Featured({ className }) {
       <section className={styles.volunteer}>
         <figure>
           <figcaption className={styles.figCaption}>
-            Join the Fenix Community -- Donate or Volunteer today!
+            <a
+              href={VOLUNTEER_FORM}
+              className={styles.anchor}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join the Fenix Community -- Donate or Volunteer today!
+            </a>
           </figcaption>
           <ContactUs />
         </figure>
